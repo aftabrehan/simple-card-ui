@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Simple UI</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div class="wrapper flex flex-center">
+      <div class="App flex">
+        <div class="sidebar flex fd-cl flex-around">
+          <div class="logo flex">
+            <span class="logo-cap">L</span>
+            <span class="logo-sm">c.</span>
+          </div>
+
+          <div class="menus flex flex-between fd-cl">
+            <div class="menu flex flex-center">
+              <i class="fas fa-th-large"></i>
+            </div>
+            <div class="menu flex flex-center"><i class="fas fa-play"></i></div>
+            <div class="menu flex flex-center">
+              <i class="fas fa-history"></i>
+            </div>
+            <div class="menu flex flex-center">
+              <i class="fas fa-book-open"></i>
+            </div>
+          </div>
+
+          <div class="exit-btn menu flex flex-center">
+            <i class="fas fa-sign-out-alt"></i>
+          </div>
+        </div>
+
+        <div class="main-content">
+          <nav class="navbar flex flex-between">
+            <div class="left-sec flex flex-between">
+              <div class="navbar-title">
+                <span>Courses</span>
+              </div>
+              <div class="navbar-search-box flex">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="search" />
+              </div>
+            </div>
+
+            <div class="navbar-btns flex flex-between">
+              <div class="flex flex-center">
+                <i class="far fa-clock"></i>
+              </div>
+              <div class="flex flex-center">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+          </nav>
+
+          <div class="content-area flex">
+            <div class="content-area-main">
+              <div class="content content-main">
+                <div class="content-text">
+                  <h1>Design</h1>
+                  <a href="#">Browse our course</a>
+                </div>
+                <div class="play-btn">
+                  <svg
+                    width="101"
+                    height="100"
+                    viewBox="0 0 101 100"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="50"
+                      cy="50"
+                      r="50"
+                      fill="#C4C4C4"
+                      fill-opacity="0.5"
+                    />
+                    <path
+                      d="M47.2908 73.0615C40.558 76.7936 32.3099 71.8376 32.4443 64.1408L32.9279 36.4322C33.0623 28.7353 41.4783 24.0703 48.0768 28.035L71.8313 42.3082C78.4298 46.2729 78.2618 55.894 71.529 59.626L47.2908 73.0615Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="content-sec-container flex">
+                <div class="content content-sec content-sec-1">
+                  <div class="content-text">
+                    <h1>Programming</h1>
+                    <a href="#">Browse our course</a>
+                  </div>
+                </div>
+                <div class="content content-sec content-sec-2">
+                  <div class="content-text">
+                    <h1>Programming</h1>
+                    <a href="#">Browse our course</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-area-sec">
+              <div class="content-1"></div>
+              <div class="content-graph flex flex-center fd-cl">
+                <div class="graph-header flex flex-between">
+                  <span class="main-text">UX Design</span>
+                  <span>40%</span>
+                </div>
+                <div class="graph">
+                  <div class="bar blue"></div>
+                  <div class="bar black"></div>
+                  <div class="bar blue"></div>
+                  <div class="bar black"></div>
+                  <div class="bar blue"></div>
+                  <div class="bar black"></div>
+                  <div class="bar blue"></div>
+                </div>
+              </div>
+              <div class="content-btn flex flex-center">
+                <span>Upgrade to pro</span>
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- partial -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
+  </body>
+</html>
